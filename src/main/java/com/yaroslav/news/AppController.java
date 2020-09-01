@@ -76,7 +76,7 @@ public class AppController {
 //            Matcher pr = price.matcher(p);
             if (m.find()) {
                 System.out.println(m.group(1));
-                res += m.group(1) + " / ";
+                res += m.group(1).replace("&#x27;"," ") + " / \n ";
             }
 
         }
