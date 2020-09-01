@@ -66,7 +66,7 @@ public class AppController {
     private String process(String keyword) throws IOException {
         String res = "";
         String text = doQuery(keyword);
-        Pattern title = Pattern.compile("class=\"css-johpve-PromoLink ett16tt7\"><span aria-hidden=\"false\">([A-Za-z 0-9&#;:,]+)");
+        Pattern title = Pattern.compile("class=\"css-1rqiz8d-PromoLink ett16tt7\"><span aria-hidden=\"false\">([A-Za-z 0-9&#;:,]+)");
 //      Pattern price = Pattern.compile("<span class=\"a-offscreen\">([0-9.$]+)</span><span aria-hidden=\"true\"><span class=\"a-price-symbol\">");
         System.out.println(text.replace("\n", ""));
         String[] prods = (text.replace("\n", "").split("<div class=\"css-14rwwjy-Promo ett16tt11\">"));
